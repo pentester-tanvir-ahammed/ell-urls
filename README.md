@@ -21,7 +21,6 @@ ELL URLS is a powerful Python-based URL gathering tool that integrates multiple 
 
 Make sure the following tools are installed:
 
-```bash
 gau
 waybackurls
 hakrawler
@@ -30,10 +29,6 @@ paramspider
 waybackpy
 python3
 pip install requests colorama termcolor pyfiglet
-
-
-Thanks! Based on your CLI demo, here's a **polished "Usage" section** you can include in your **GitHub README** under a dedicated heading:
-
 
 
 ## 🚀 Usage
