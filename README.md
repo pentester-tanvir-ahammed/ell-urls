@@ -64,6 +64,34 @@ Make sure all tools are in your `$PATH`.
 ```bash
 python3 ellurls.py
 ```
+You're getting the `externally-managed-environment` error because **Kali Linux uses PEP 668** to **protect its system-wide Python environment**. This prevents you from installing Python packages globally using `pip install` unless you explicitly bypass the protection — which is **not recommended** for system stability.
+
+---
+
+### Recommended Fix (Safe Way)
+
+Use a **Python virtual environment** for your tool:
+
+#### Create a virtual environment
+
+```bash
+sudo apt install python3-venv -y
+python3 -m venv ell-env
+```
+
+#### Activate the virtual environment
+
+```bash
+source ell-env/bin/activate
+```
+
+#### Install Python dependencies *inside the venv*
+
+```bash
+pip install requests colorama termcolor pyfiglet
+```
+
+You can now safely run `ellurls.py` within the virtual environment without risking your system packages.
 
 
 ### 🧪 Example: Single Domain Mode
