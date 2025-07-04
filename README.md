@@ -12,7 +12,6 @@ ELL URLS is a powerful Python-based URL gathering tool that integrates multiple 
 - ✅ Extension-based URL filtering (`.zip`, `.pdf`, etc.)
 - ✅ Wayback Machine archival URL enumeration
 - ✅ Integration with tools like `gau`, `waybackurls`, `hakrawler`, `katana`, `paramspider`, and more
-- ✅ Animated CLI experience with ASCII logo and live loaders
 - ✅ Automatically removes duplicates and saves clean output
 - ✅ Option to define custom filename for final results
 
