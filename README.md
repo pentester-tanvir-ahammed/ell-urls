@@ -20,7 +20,7 @@ ELL URLS is a powerful Python-based URL gathering tool that integrates multiple 
 ## 📦 Requirements
 
 Make sure the following tools are installed:
-
+```bash
 gau
 waybackurls
 hakrawler
@@ -29,7 +29,7 @@ paramspider
 waybackpy
 python3
 pip install requests colorama termcolor pyfiglet
-
+```
 
 ## 🚀 Usage
 
