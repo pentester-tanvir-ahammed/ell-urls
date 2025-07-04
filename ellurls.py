@@ -115,7 +115,7 @@ def fetch_urls(target, file_extensions):
 def check_wayback_snapshot(url):
     wayback_url = f'https://archive.org/wayback/available?url={url}'
     try:
-        response = requests.get(wayback_url, timeout=30)
+        response = requests.get(wayback_url, timeout=5)
         response.raise_for_status()
         data = response.json()
         if "archived_snapshots" in data and "closest" in data["archived_snapshots"]:
