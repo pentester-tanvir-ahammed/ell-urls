@@ -149,7 +149,7 @@ def process_domain(target, file_extensions):
         return
     all_filtered_urls = save_urls(target, extension_stats)
     for url in all_filtered_urls:
-        check_wayback_snapshot(url)
+        #check_wayback_snapshot(url)
 
 # Run external URL tools
 def run_command(name, command, temp_file, url_set):
