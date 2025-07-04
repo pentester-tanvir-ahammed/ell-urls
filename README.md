@@ -38,14 +38,14 @@ Thanks! Based on your CLI demo, here's a **polished "Usage" section** you can in
 
 ## 🚀 Usage
 
-### 1️⃣ Clone the Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/pentester-tanvir-ahammed/ell-urls.git
 cd ell-urls
 ```
 
-### 2️⃣ Install Requirements
+### Install Requirements
 
 Ensure the following tools are installed on your system (if not, install via apt, go, or pip):
 
@@ -65,7 +65,7 @@ pip install waybackpy
 Make sure all tools are in your `$PATH`.
 
 
-### 3️⃣ Run the Tool
+### Run the Tool
 
 ```bash
 python3 ellurls.py
