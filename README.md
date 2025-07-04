@@ -65,7 +65,7 @@ Make sure all tools are in your `$PATH`.
 python3 ellurls.py
 ```
 
-### Recommended Fix (Safe Way)
+### 🛠️ Recommended Fix (Safe Way)
 
 Use a **Python virtual environment** for your tool:
 
