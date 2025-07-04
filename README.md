@@ -30,3 +30,60 @@ paramspider
 waybackpy
 python3
 pip install requests colorama termcolor pyfiglet
+
+
+Thanks! Based on your CLI demo, here's a **polished "Usage" section** you can include in your **GitHub README** under a dedicated heading:
+
+
+
+## 🚀 Usage
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/pentester-tanvir-ahammed/ell-urls.git
+cd ell-urls
+```
+
+### 2️⃣ Install Requirements
+
+Ensure the following tools are installed on your system (if not, install via apt, go, or pip):
+
+```bash
+# Install Python dependencies
+pip install requests colorama termcolor pyfiglet
+
+# Install required tools (if not already installed)
+go install github.com/lc/gau/v2/cmd/gau@latest
+go install github.com/tomnomnom/waybackurls@latest
+go install github.com/hakluke/hakrawler@latest
+go install github.com/projectdiscovery/katana/cmd/katana@latest
+pip install waybackpy
+# Clone ParamSpider separately if needed
+```
+
+Make sure all tools are in your `$PATH`.
+
+
+### 3️⃣ Run the Tool
+
+```bash
+python3 ellurls.py
+```
+
+
+### 🧪 Example: Single Domain Mode
+
+```text
+Select mode (1: Single Domain, 2: Multiple Domains): 1
+Enter the target domain (e.g., example.com): gov.sg
+Use custom file extensions or load from extensions.txt? (custom/load): load
+```
+
+
+### 📂 Output
+
+* Filtered URLs by extension saved in `/content/<domain>/`
+* Enhanced gathered results saved in `enhanced_output_<domain>.txt`
+* All **unique URLs** saved in a user-defined `.txt` file
+
