@@ -112,20 +112,20 @@ def fetch_urls(target, file_extensions):
                 return {}
 
 # Check for archived snapshots
-def check_wayback_snapshot(url):
-    wayback_url = f'https://archive.org/wayback/available?url={url}'
-    try:
-        response = requests.get(wayback_url, timeout=5)
-        response.raise_for_status()
-        data = response.json()
-        if "archived_snapshots" in data and "closest" in data["archived_snapshots"]:
-            snapshot_url = data["archived_snapshots"]["closest"].get("url")
-            if snapshot_url:
-                print(f"[+] Found possible backup: {colored(snapshot_url, 'green')}")
-        else:
-            print(f"[-] No archived snapshot found for {url}.")
-    except Exception as e:
-        print(f"[?] Error checking Wayback snapshot for {url}: {e}")
+#def check_wayback_snapshot(url):
+    #wayback_url = f'https://archive.org/wayback/available?url={url}'
+    #try:
+        #response = requests.get(wayback_url, timeout=5)
+        #response.raise_for_status()
+        #data = response.json()
+        #if "archived_snapshots" in data and "closest" in data["archived_snapshots"]:
+            #snapshot_url = data["archived_snapshots"]["closest"].get("url")
+            #if snapshot_url:
+                #print(f"[+] Found possible backup: {colored(snapshot_url, 'green')}")
+        #else:
+            #print(f"[-] No archived snapshot found for {url}.")
+    #except Exception as e:
+        #print(f"[?] Error checking Wayback snapshot for {url}: {e}")
 
 # Save filtered URLs
 def save_urls(target, extension_stats, file_suffix="_filtered_urls.txt"):
